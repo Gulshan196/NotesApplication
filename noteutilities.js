@@ -202,6 +202,7 @@ function DeleteSelected(ids) {
    let newArray  = main_data_array.filter(t=>t.id!=delNotes.id);
 //    let newDelArray  = main_data_array.filter(t=>t.id==delNotes.id);
    localStorage.setItem(NOTES_MAIN_STORE, JSON.stringify(newArray));
+    localStorage.setItem(NOTES_DELETED_STORE, JSON.stringify(deleted_array));
      
     
 
